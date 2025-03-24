@@ -133,3 +133,54 @@ This restaurant rating system supports:
 
 The design is modular and follows SOLID and DRY principles, ensuring that the system is scalable, maintainable, and easy to extend with additional features or improvements.
 
+# Restaurant Rating System
+
+A full-featured restaurant rating system built with Spring Boot and MongoDB. This application allows users to register, rate restaurants, and view reviews. It also supports placing and canceling orders. The system is designed with SOLID and DRY principles in mind, ensuring that the code is modular, maintainable, and easy to extend.
+
+## Features
+
+- **User Registration:**  
+  Users can register by providing their username and password.
+
+- **Restaurant Management:**  
+  - **Add Restaurant:** Administrators can add new restaurants.
+  - **Get Restaurant Details:** View detailed information about a restaurant along with its average rating.
+  - **List Restaurants:** Retrieve a list of restaurants sorted by descending average rating (with an option to limit to the top N).
+
+- **Rating Functionality:**  
+  - **Add or Update Rating:** Registered users can rate restaurants on a scale of 1 to 10. If a user rates the same restaurant again, the previous rating is overwritten.
+  - **Optional Details:** Users can optionally add dish names and rating descriptions.
+  - **List Ratings:** Retrieve ratings for a restaurant with optional filtering by score range (lower and higher values) and sorting order (ascending or descending).
+
+**** Code practice: ****
+- **Order Management:**  
+  - **Place Order:** Users can place orders at a restaurant.
+  - **Cancel Order:** Users can cancel an existing order, which updates its status.
+
+- **Security & Service Discovery:**  
+  The application uses basic authentication (in-memory for demonstration purposes) and is ready for integration with Eureka and Spring Cloud Config for microservice deployments.
+
+## Technology Stack
+
+- **Spring Boot:** Framework for building RESTful APIs.
+- **MongoDB:** Document-oriented database for storing restaurants, ratings, users, and orders.
+- **Spring Security:** Basic authentication for protecting endpoints.
+- **Eureka & Spring Cloud Config:** (Optional) For service discovery and external configuration.
+- **Java 8:** Leverages functional programming and declarative coding styles with Streams and lambdas.
+
+## Getting Started
+
+### Prerequisites
+
+- **Java 8** or higher
+- **Maven**
+- **MongoDB** (running locally on default port 27017)
+- **Git** (for version control)
+
+### Installation
+
+1. **Clone the Repository:**
+
+   ```bash
+   git clone https://github.com/your-username/restaurant-rating-app.git
+   cd restaurant-rating-app
