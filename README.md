@@ -132,11 +132,6 @@ This restaurant rating system supports:
 - **Listing Top Restaurants:** Restaurants are listed in descending order of their average rating, with the option to limit the list to the top N restaurants (e.g., top 10).
 
 The design is modular and follows SOLID and DRY principles, ensuring that the system is scalable, maintainable, and easy to extend with additional features or improvements.
-
-# Restaurant Rating System
-
-A full-featured restaurant rating system built with Spring Boot and MongoDB. This application allows users to register, rate restaurants, and view reviews. It also supports placing and canceling orders. The system is designed with SOLID and DRY principles in mind, ensuring that the code is modular, maintainable, and easy to extend.
-
 ## Features
 
 - **User Registration:**  
